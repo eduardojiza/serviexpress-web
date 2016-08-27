@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SERVIEXPREES</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/index-1.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.growl/stylesheets/jquery.growl.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="lib/jquery.growl/javascripts/jquery.growl.js"></script>
+	<script src="js/index.js"></script>
+	
+</head>
+<body>
+	<section class="cab">
+		<section class="row">
+			<div class="col-xs-12" id="data-ch">
+				<section class="row">
+					<div class="col-xs-5">
+						<p>EMEREGENCIAS</p>
+						<p>LAS 24 HORAS</p>
+					</div>
+					<div class="col-xs-7">
+						<p>CONTACTO :</p>
+						<p>26212052 / 26211771</p>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-5 col-sm-5 col-xs-9 " id="logo">
+				<img src="img/logo1.jpeg" alt="">
+			</div>
+			
+			<div class="col-xs-3" id="menu-ch">
+				<p><i class="fa fa-bars" aria-hidden="true"></i></p>
+				<nav>
+					<section class="row">
+						<div class="col-xs-6" id="op-i-ch">
+							<p><i class="fa fa-home" aria-hidden="true"></i></p>
+							<p>Inicio</p>
+						</div>
+						<div class="col-xs-6" id="op-n-ch">
+							<p><i class="fa fa-users" aria-hidden="true"></i></p>
+							<p>Nosotros</p>
+						</div>
+						<div class="col-xs-6" id="op-s1-ch">
+							<p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+							<p>Electricidad</p>
+						</div>
+						<div class="col-xs-6" id="op-s2-ch">
+							<p><i class="fa fa-wrench" aria-hidden="true"></i></p>
+							<p>Plomería y Gas </p>
+						</div>
+						<div class="col-xs-12" id="op-c-ch">
+							<p><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</p>
+						</div>
+					</section>
+				</nav>
+			</div>
+			<div class="col-md-7 col-sm-7" id="logo-tx">
+				<section class="row">
+					<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-3 col-sm-3 col-xs-3" id="tx-eme">
+						<p>EMEREGENCIAS</p>
+						<p>LAS 24 HORAS</p>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-6 col-sm-6 col-xs-6" id="tx-data">
+						<p>
+							<i class="fa fa-phone" aria-hidden="true"></i><span>CONTACTO : </span>
+							<span>26212052 / 26211771</span>
+						</p>
+					</div>
+				</section>
+			</div>
+		</section>
+	</section>
+	<section class="cab-sub">
+		<section class="row">
+			<div class="col-md-10 col-sm-9">
+				<section class="row" id="op">
+					<div class="col-md-3 col-sm-3">
+						<p id="op-i"><span>INICIO</span></p>
+					</div>
+					<div class="col-md-3 col-sm-3" id="ops-s">
+						<div id="op-s">
+							<ul>
+								<li><span>SERVICIOS</span>
+									<ul>
+										<li id="bot-s1">ELECTRICIDAD</li>
+										<li id="bot-s2">PLOMERÍA Y GAS</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p id="op-n"><span>QUIENES SOMOS</span></p>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p id="op-c"><span>CONTACTO</span></p>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<section class="row" id="op-ok">
+					<div class="col-md-3 col-sm-3"></div>
+					<div class="col-md-9 col-sm-9" id="op-ok-1" data-toggle="modal" data-target="#myModal">
+						<p>SOLICTUD</p>
+						<p>DE SERVICIO</p>
+					</div>
+				</section>
+			</div>
+		</section>
+	</section>
+
+	<!------------------------------  Modal Inicio -------------------------->
+	<section class="row-fluid">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">SOLICITUD DE SERVICIO</h4>
+					</div>
+					<div class="modal-body">
+						<h5>AGENDE SU SERVICIO</h5>
+						<section class="row">
+							<div class="col-md-10">
+								<form>
+									<div class="form-group">
+										<label for="nomc">NOMBRE DEL CLIENTE</label>
+										<input type="text" class="form-control" id="clientName" required>
+									</div>
+									<div class="form-group">
+										<label for="nomc">DIRECCIÓN</label>
+										<input type="text" class="form-control" id="address" required>
+									</div>
+									<div class="form-group">
+										<label for="nomc">TELÉFONO</label>
+										<input type="tel" class="form-control" id="phone" required>
+									</div>
+									<div class="form-group">
+										<label for="nomc">CORREO ELECTRÓNICO</label>
+										<input type="email" class="form-control" id="email" required>
+									</div>
+									<div class="form-group">
+										<label for="nomc">SERVICIO</label>
+										<input type="text" class="form-control" id="service" required>
+									</div>
+									<div class="form-group">
+										<label for="nomc">FECHA Y HORA DEL SERVICIO</label>
+										<input type="date" class="form-control" id="date" required>
+									</div>
+								</form>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">CANCELAR</button>
+						<button type="button" class="btn btn-primary" id="agendar">AGENDAR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!------------------------------  Modal Fin    -------------------------->
+
+
+	<section class="td-i">
+		<section class="portada">
+			<section class="row-fluid">
+				<div class="col-md-1 col-sm-0"></div>
+				<div class="col-md-10 col-sm-12" id="td-i-slider">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/plomeria_02-01-01(1).jpg" alt="Cargando ...">
+								<div class="carousel-caption">
+									<p>INSTALACIONES  <span class="tx-separar">REPARACIONES</span> MANTENIMIENTO</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/20160224_174254.jpg" alt="...">
+								<div class="carousel-caption">
+									<p>RESIDENCIAL <span class="tx-separar">COMERCIAL INDUSTRIAL</span></p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/20160226_151414.jpg" alt="...">
+								<div class="carousel-caption">
+									<p>HIDRÁULICAS <span class="tx-separar">ELÉCTRICAS</span> SANITARIAS</p>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+
+			</section>
+			<section class="row-fluid" >
+				<div class="col-md-12"id="tx-mov1">
+					<p><MARQUEE SCROLLDELAY =100> GARANTÍA DE CA LIDADA Y CONFIANZA A SU SERVICIO </MARQUEE></p>
+				</div>
+			</section>
+		</section>
+
+		<section class="capa">
+			
+		</section>
+		
+		
+		
+		
+		<!------------------------------  Contenido variable-fin -------------------------->
+		<section class="row-fluid">
+			<div class="col-md-12 col-sm-12 col-xs-12" id="hfn-i">
+				<section class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12" id="hfn-i-l"></div>
+					<div class="col-md-7 col-sm-7 col-xs-12" id="hfn-i-dir">
+						<p>DIRECCIÓN: MELCHOR OCAMPO N°42 COLONIA  CAMPAMENTO 2 DE OCTUBRE, IZTACALCO, CUIDAD DE MÉXICO</p>
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-12" id="hfn-i-c">
+						<p><i class="fa fa-phone" aria-hidden="true"></i>CONTACTO : 26212052 / 26211771</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		
+	</section>
+
+	<section class="carga">
+		
+		<p><img src="logo.jpeg"></p>
+		<p>Cargando ...</p>
+		<center><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></center>
+		<span class="sr-only">Loading...</span>
+	</section>
+
+</body>
+</html>
