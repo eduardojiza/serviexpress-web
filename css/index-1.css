@@ -38,7 +38,7 @@
 
 #h1-s-li {
 	position: relative;
-	background: #999590; 
+	background: #1A0862;
 	font-size: 1.1em;
 	color: #FFF;
 	text-align: center;
@@ -62,7 +62,7 @@
 .h1-s-op {
 	margin-left: 2px;
 	margin-right: 2px;
-	background: #999590; 
+	background: #1A0862;
 	color: #FFF;
 	height: 240px;
 	margin-top: 10px;
@@ -87,6 +87,19 @@
 	-webkit-transition: height 1s ease;
 	-o-transition: height 1s ease;
 }
+
+.h1-s-op .verti2 img {
+	height: 100px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	rotation: 180deg;
+	transition: height 1s ease;
+	-webkit-transition: height 1s ease;
+	-o-transition: height 1s ease;
+}
+
 
 .h1-s-op img {
 	height: 110px;
@@ -117,11 +130,11 @@
 	margin-bottom: 30px;
 	margin-right: 5px;
 	margin-left: 5px;
-	background: #999590; 
+	background: #FFF; 
 	border: 3px solid #1A0862;
 	text-align: center;
 	font-size: 1.7em;
-	color: #FFF;
+	color: #1A0862;
 	padding-top: 10px;
 }
 
@@ -145,9 +158,9 @@
 #h1-qs {
 	height: 100%;
 	margin-top: 50px;
-	margin-bottom: 30px;
-	padding:10px;
-	background: #999590;
+	margin-bottom: 10px;
+	padding:20px;
+	background: #1A0862;;
 	color: #fff;
 }
 
@@ -186,7 +199,9 @@
 }
 
 #h1-c button {
-	border: 1px solid #1A0862;
+	
+	background: #1A0862;
+	color: #FFF;
 	margin-bottom: 20px;
 	transition: background 0.5s ease , color 0.5s ease;
 	-webkit-transition: background 0.5s ease , color 0.5s ease;
@@ -194,7 +209,7 @@
 }
 
 #h1-c button:hover {
-	background: #1A0862;
+	background: #FD0F17;
 	color: #FFF;
 
 }
@@ -253,6 +268,11 @@
 .tx-separar {
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+.modal-body {
+
+	color: #FD0F17;
 }
 
 

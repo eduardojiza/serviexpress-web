@@ -1,6 +1,8 @@
 $(document).ready(main);
+
+
  
-const url = 'http://localhost:3000/';
+const url = 'http://www.serviexpressasistencia.com.mx/api/';
 var contador = 1;
  
 function main(){
@@ -12,14 +14,23 @@ function main(){
 				left: '0'
 			});
 			contador = 0;
+			$(".cb-color-ch").css("display", "block");
 		} else {
 			contador = 1;
 			$('nav').animate({
 				left: '-100%'
 			});
+			$(".cb-color-ch").css("display", "none");
 		}
+
+
  
 	});
+
+	$('#recargar').click(function() {
+        // Recargo la página
+        location.reload();
+    });
 
 	/*
 	$("#op-s span").hover(function(){
@@ -72,6 +83,178 @@ function inicio(event){
 		$(".carga").fadeToggle(4000);
 	}	
 }
+
+
+var ich=1;
+var s1ch=0;
+var s2ch=0;
+var nch=0;
+var cch=0;
+
+function Cmenu(valor) {
+
+
+	if(valor==1 && ich==0) {
+		ich=1;
+		$(".carga").fadeToggle(100);
+		$("#ops-i-ch").addClass("cb-color-ch");
+		$(".capa").load('inicio.html');
+
+		if(nch==1) {
+			$("#ops-n-ch").removeClass("cb-color-ch");
+			nch=0;
+		}
+		else if(s1ch==1) {
+			$("#ops-s1-ch").removeClass("cb-color-ch");
+			s1ch=0;
+		}
+		else if(s2ch==1) {
+			$("#ops-s2-ch").removeClass("cb-color-ch");
+			s2ch=0;
+		}
+		else if(cch==1) {
+			$("#ops-c-ch").removeClass("cb-color-ch");
+			$(".portada").css("display", "block");
+			cch=0;
+		}
+
+		$('nav').animate({
+			left: '-100%'
+		});
+		$('body, html').animate({scrollTop: '0px'}, 300);
+		$(".carga").fadeToggle(300);
+	}
+	else if(valor==2 && nch==0) {
+		nch=1;
+		$(".carga").fadeToggle(100);
+		$("#ops-n-ch").addClass("cb-color-ch");
+		$(".capa").load('qs.html');
+
+		if(ich==1) {
+			$("#ops-i-ch").removeClass("cb-color-ch");
+			ich=0;
+		}
+		else if(s1ch==1) {
+			$("#ops-s1-ch").removeClass("cb-color-ch");
+			s1ch=0;
+		}
+		else if(s2ch==1) {
+			$("#ops-s2-ch").removeClass("cb-color-ch");
+			s2ch=0;
+		}
+		else if(cch==1) {
+			$("#ops-c-ch").removeClass("cb-color-ch");
+			$(".portada").css("display", "block");
+			cch=0;
+		}
+
+		$('nav').animate({
+			left: '-100%'
+		});
+		$('body, html').animate({scrollTop: '0px'}, 300);
+		$(".carga").fadeToggle(300);
+
+	}
+	else if(valor==3 && s1ch==0) {
+		s1ch=1;
+		$(".carga").fadeToggle(100);
+		$("#ops-s1-ch").addClass("cb-color-ch");
+		$(".capa").load('servicio1.html');
+
+		if(ich==1) {
+			$("#ops-i-ch").removeClass("cb-color-ch");
+			ich=0;
+		}
+		else if(nch==1) {
+			$("#ops-n-ch").removeClass("cb-color-ch");
+			nch=0;
+		}
+		else if(s2ch==1) {
+			$("#ops-s2-ch").removeClass("cb-color-ch");
+			s2ch=0;
+		}
+		else if(cch==1) {
+			$("#ops-c-ch").removeClass("cb-color-ch");
+			$(".portada").css("display", "block");
+			cch=0;
+		}
+
+		$('nav').animate({
+			left: '-100%'
+		});
+		$('body, html').animate({scrollTop: '0px'}, 300);
+		$(".carga").fadeToggle(300);
+
+	}
+	else if(valor==4 && s2ch==0) {
+		s2ch=1;
+		$(".carga").fadeToggle(100);
+		$("#ops-s2-ch").addClass("cb-color-ch");
+		$(".capa").load('servicio2.html');
+
+		if(ich==1) {
+			$("#ops-i-ch").removeClass("cb-color-ch");
+			ich=0;
+		}
+		else if(nch==1) {
+			$("#ops-n-ch").removeClass("cb-color-ch");
+			nch=0;
+		}
+		else if(s1ch==1) {
+			$("#ops-s1-ch").removeClass("cb-color-ch");
+			s1ch=0;
+		}
+		else if(cch==1) {
+			$("#ops-c-ch").removeClass("cb-color-ch");
+			$(".portada").css("display", "block");
+			cch=0;
+		}
+
+		$('nav').animate({
+			left: '-100%'
+		});
+		$('body, html').animate({scrollTop: '0px'}, 300);
+		$(".carga").fadeToggle(300);
+
+	}
+	else if(valor==5 && cch==0) {
+		cch=1;
+		$(".carga").fadeToggle(100);
+		$(".portada").css("display", "none");
+		$("#ops-c-ch").addClass("cb-color-ch");
+		$(".capa").load('contacto.html');
+
+		if(ich==1) {
+			$("#ops-i-ch").removeClass("cb-color-ch");
+			ich=0;
+		}
+		else if(nch==1) {
+			$("#ops-n-ch").removeClass("cb-color-ch");
+			nch=0;
+		}
+		else if(s1ch==1) {
+			$("#ops-s1-ch").removeClass("cb-color-ch");
+			s1ch=0;
+		}
+		else if(s2ch==1) {
+			$("#ops-s2-ch").removeClass("cb-color-ch");
+			s2ch=0;
+		}
+
+		$('nav').animate({
+			left: '-100%'
+		});
+		$('body, html').animate({scrollTop: '0px'}, 300);
+		$(".carga").fadeToggle(300);
+		let sendContacto = document.querySelector("#sendContacto");
+		sendContacto.addEventListener('click', function(){
+			console.log('precioado sendContacto');
+		});	
+	}
+	contador=1;
+	
+}
+
 
 $(document).ready(function() {
 
@@ -273,7 +456,8 @@ $(document).ready(function() {
 	});
 
 	/******************* Botones Celular ******************/
-	$("#op-i-ch").addClass("cb-color-ch");
+	/*
+	$("#ops-i-ch").addClass("cb-color-ch");
 
 	$("#op-i-ch").click(function(event) {
 		if(i==0)
@@ -283,13 +467,13 @@ $(document).ready(function() {
 			$(".capa").load('inicio.html');
 			if(s1==1)
 			{
-				$("#bot-s1").removeClass("cb-color-ch");
+				$("#op-s1-ch").removeClass("cb-color-ch");
 				s1=0;
 			}
 
 			if(s2==1)
 			{
-				$("#bot-s2").removeClass("cb-color-ch");
+				$("#op-s2-ch").removeClass("cb-color-ch");
 				s2=0;
 			}
 
@@ -312,7 +496,8 @@ $(document).ready(function() {
 				left: '-100%'
 			});
 			$('body, html').animate({scrollTop: '0px'}, 300);
-			$(".carga").fadeToggle(4000);
+			$(".carga").fadeToggle(300);
+			
 		}
 
 	});
@@ -350,13 +535,13 @@ $(document).ready(function() {
 			}
 			
 			s1=1;
-			i=1;
 			contador = 1;
 			$('nav').animate({
 				left: '-100%'
 			});
 			$('body, html').animate({scrollTop: '0px'}, 300);
-			$(".carga").fadeToggle(4000);
+			$(".carga").fadeToggle(300);
+			
 		}
 		
 
@@ -394,13 +579,13 @@ $(document).ready(function() {
 			}
 			
 			s2=1;
-			i=1;
 			contador = 1;
 			$('nav').animate({
 				left: '-100%'
 			});
 			$('body, html').animate({scrollTop: '0px'}, 300);
-			$(".carga").fadeToggle(4000);
+			$(".carga").fadeToggle(300);
+			
 		}
 
 	});
@@ -442,7 +627,8 @@ $(document).ready(function() {
 				left: '-100%'
 			});
 			$('body, html').animate({scrollTop: '0px'}, 300);
-			$(".carga").fadeToggle(4000);
+			$(".carga").fadeToggle(300);
+			
 		}
 
 	});
@@ -484,13 +670,15 @@ $(document).ready(function() {
 				left: '-100%'
 			});
 			$('body, html').animate({scrollTop: '0px'}, 300);
-			$(".carga").fadeToggle(4000);
+			$(".carga").fadeToggle(300);
+			
 		}
 		let sendContacto = document.querySelector("#sendContacto");
 		sendContacto.addEventListener('click', function(){
 			console.log('precioado sendContacto');
 		});	
 	});
+	/*
 	
 	//Logic
 	/******************************************************/
@@ -686,4 +874,9 @@ function isValidPhone( phone ){
 
 function isValidText( text ){
 	return text ? true : false;
+}
+
+
+function checar() {
+	document.getElementById("contactAccept").checked = true;
 }

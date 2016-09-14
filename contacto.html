@@ -6,7 +6,7 @@
 					<section class="row">
 						<div class="col-md-1 col-sm-0 col-xs-0"></div>
 						<div class="col-md-4 col-sm-5 col-xs-12">
-							<form class="formulario">
+							<form class="formulario" name="formulario">
 								<div class="form-group">
 									<label class="sr-only" for="nom">Nombre</label>
 									<div class="input-group">
@@ -31,7 +31,7 @@
 								<textarea class="form-control" rows="4" id="contactText" placeholder="Escriba su mensaje aquí  ..." required></textarea>
 								<div class="checkbox">
 									<label>
-										<input type="checkbox" id="contactAccept"> Acepto Términos y Condiciones
+										<a href="#" data-toggle="modal" data-target="#tyc"><input type="checkbox" id="contactAccept"> Acepto Términos y Condiciones</a>
 									</label>
 								</div>
 								<center><button class="btn btn-default btn-lg" onclick="sendContacto( event )">Enviar</button></center>
@@ -40,7 +40,7 @@
 						<div class="col-md-1 col-sm-0 col-xs-0"></div>
 						<div class="col-md-5 col-sm-7 col-xs-12">
 							<br>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6576963080065!2d-99.11823598509406!3d19.383968886911838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x157c438ffb185856!2sServiexpress+Asistencia!5e0!3m2!1ses!2sus!4v1472252031884" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6576963080065!2d-99.11823598509406!3d19.383968886911838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x157c438ffb185856!2sServiexpress+Asistencia!5e0!3m2!1ses!2sus!4v1472252031884" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</section>
 				</div>
@@ -48,3 +48,29 @@
 		</div>
 	</section>
 </section>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="tyc" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Términos y condiciones</h4>
+        </div>
+        <div class="modal-body">
+          <p>Los datos de carácter personal que nos remita a través de este formulario electrónico de contacto quedarán incorporados en los sistemas de información de SERVIEXPRESS ASISTENCIA</p>
+          <p>SERVIEXPRESS ASISTENCIA garantiza la confidencialidad de todos los datos facilitados. Además de los mínimos establecidos por la legislación, la recogida y tratamiento de los datos se efectúan bajo niveles de seguridad que impiden la pérdida o manipulación de los datos.</p>
+          <p>De acuerdo con lo establecido en el artículo 5.1 de la vigente Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (LOPD), le informamos que sus datos quedan incorporados en un fichero del que es titular SERVIEXPRESS ASISTENCIA debidamente inscrito en el Registro General de Protección de Datos con la finalidad de atender su petición y remitirle la información solicitada, así como enviarle comunicaciones comerciales, por medios electrónicos, sobre nuestros servicios que puedan ser de su interés.</p>
+          <p>Mediante la indicación de sus datos, y de conformidad con lo establecido en el artículo 6 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, usted otorga su consentimiento inequívoco a SERVIEXPRESS ASISTENCIA para que proceda, en cumplimiento de los fines mencionados en el apartado anterior, al tratamiento de los datos personales facilitados.</p>
+          <p>Podrá ejercer sus derechos de acceso, rectificación, cancelación y oposición al tratamiento de sus datos, mediante las formas legalmente establecidas, a través de escrito dirigido a la dirección postal de SERVIEXPRESS ASISTENCIA. Melchor Ocampo 42, Campamento 2 de Octubre, 08930 Ciudad de México, D.F. o enviando un correo electrónico En ambos casos el afectado deberá acompañar una prueba de identidad valida en derecho, como por ejemplo, fotocopia de su documento nacional de identidad, pasaporte u otro documento válido que lo identifique, indicando claramente el derecho que desea ejercitar.</p>
+          <p>Además, en cualquier momento, y de acuerdo con lo dispuesto en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, puede manifestar su deseo de NO recibir comunicaciones comerciales electrónicas, de forma sencilla y gratuita, enviando una solicitud por correo electrónico indicando BAJA en el asunto del mensaje.</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="checar()">Acepto</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>

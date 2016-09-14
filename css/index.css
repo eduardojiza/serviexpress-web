@@ -70,6 +70,7 @@ body {
 	width: 100%;
 	height: 40px;
 	background: #FD0F17;
+
 }
 
 #op {
@@ -78,12 +79,13 @@ body {
 	color: #FFF;
 	background: #FD0F17;
 	height: 40px;
-	border-radius: 0px 10px 10px 0px;
+	
+
 }
 
 #op-i,#op-s,#op-n,#op-c {
 	position: relative;
-	top: 9px;
+	top: 10px;
 	font-size: 15px;
 }
 
@@ -92,7 +94,7 @@ body {
 }
 
 .color-op {
-	padding: 10px;
+	padding: 12px;
 	background: #FFF;
 	color: #FD0F17
 }
@@ -162,6 +164,7 @@ body {
 	color: #fff;
 	margin-top: 10px;
 	overflow:hidden;
+	background: #FD0F17;
 }
 
 #tx-mov1 p {
@@ -211,17 +214,19 @@ body {
 .h2-img {
 	text-align: center;
 	background: #999590;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 10px;
-	height: 200px;
+	height: 210px;
+	background: #1A0862;
+
 }
 
 .h2-img img {
 
-	height: 110px;
+	height: 130px;
 	cursor: pointer;
 	transition: height 1s ease;
 	-webkit-transition: height 1s ease;
@@ -230,9 +235,8 @@ body {
 
 .h2-img img:hover {
 
-	height: 120px;
-
-
+	height: 140px;
+	
 
 }
 
@@ -250,8 +254,10 @@ body {
 	margin-bottom: 30px;
 	margin-top: 50px;
 	border: 1px solid #1A0862;
-	min-height: 520px;
+	
 	height: 100%;
+	background: #1A0862;
+	color: #FFF;
 }
 
 
@@ -275,7 +281,8 @@ body {
 #h3-st p {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	text-align: center;
+	padding-left: 10px;
+	text-align: justify;
 }
 
 #h3-se {
@@ -286,6 +293,7 @@ body {
 	text-align: justify;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 20px;
 }
 
 #h3-se ul {
@@ -298,7 +306,7 @@ body {
 }
 
 #h3-se li {
-	padding-bottom: 15px;
+	padding-bottom: 38px;
 }
 
 #h3-i-linea {
@@ -318,13 +326,18 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: justify;
+	background: #1A0862;
 }
 
 #h3-i-fn1 {
 	font-size: 1.1em;
 	text-align: center;
 	color: rgba(0,0,0,0.70);
-	padding-bottom: 20px;
+	padding-bottom: 00px;
+	padding-top: 20px;
+	color: #FD0F17;
+
+
 }
 
 #menu-ch,#data-ch {
@@ -339,8 +352,7 @@ body {
 */
 
 #op-s > ul > li:hover > span, #op-c span:hover, #op-n span:hover, #op-i span:hover{
-	padding: 10px 10px 10px 10px;
-	border: 1px solid #FFF;
+	padding: 12px 12px 12px 12px;
 	background: #FFF;
 	color: #FD0F17;
 }
@@ -375,10 +387,9 @@ body {
 	border: 2px solid #1A0862;
 }
 
-.h4-i-ic i {
-	font-size: 100px;
-	padding-top: 25px;
-	color: #FD0F17;
+.h4-i-ic img {
+	height: 120px;
+	padding-top: 20px;
 
 }
 
@@ -399,7 +410,7 @@ body {
 
 #hfn-i {
 	margin-top: 50px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	background: #817D76;
 	color: #FFF;
 }
@@ -412,17 +423,16 @@ body {
 }
 
 #hfn-i-dir {
-	font-size: 1.2em;
+	font-size: 1em;
 	/*color: rgba(0,0,0,0.70);*/
-	font-weight: 600;
 	color: #FFF;
 }
 
 #hfn-i-c {
 	text-align: right;
-	font-size: 1.2em;
-	padding-top: 20px;
-	font-weight: 600;
+	font-size: 1em;
+	padding-top: 10px;
+	
 }
 
 #hfn-i-c i {
@@ -466,6 +476,48 @@ body {
 	rotation: 90deg;
 }
 
+.rot180 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	rotation: 90deg;
+}
+
+.carousel-indicators {
+	display: none;
+}
+
+.carousel-caption {
+	right: 15%;
+	left: 15%;
+	padding-bottom: 5px;
+	border-radius: 0px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	background: rgba(255,255,255,0.65)
+}
+
+
+
+.face {
+	position: fixed;
+	width: 60px;
+	height: 70px;
+	top: 115px;
+	right: 0px;
+	background: green;
+	z-index: 30;
+	font-size: 50px;
+	text-align: center;
+	color: #FFF;
+	background: #4386FA;
+	
+	cursor: pointer;
+}
+
+.face a:link, .face a:visited, .face a:hover {
+	text-decoration: none;
+	color: #FFF;
+} 
 
 /* Rotar */
 
@@ -646,7 +698,7 @@ body {
 	
 
 	#h3-st {
-		height: 220px;
+		height: 100%;
 	}
 
 	#h3-st li {
@@ -673,7 +725,12 @@ body {
 	}
 
 	#h3-se {
-		height: 380px;
+		height: 100%;
+	}
+
+	#h3-se li {
+		height: 100%;
+		padding-bottom: 10px;
 	}
 
 	#h3-i-fn {
@@ -750,7 +807,7 @@ body {
 		font-size: 13px;
 		padding-top: 15px;
 		padding-bottom: 5px;
-		border: 5px solid #1A0862;
+		border: 3px solid #1A0862;
 		color: #FD0F17;
 		font-weight: 300;
 	}
@@ -767,8 +824,10 @@ body {
 	}
 
 	.cb-color-ch {
+		display: block;
 		background: #FFF;
 		color: #1A0862;
+
 	}
 
 	#h4-i {
@@ -777,6 +836,47 @@ body {
 
 	#h3-st {
 		height: 100%;
+	}
+
+	.h4-i-ic img {
+		height: 100px;
+		padding-top: 20px;
+
+	}
+
+	#ops-i-ch, #ops-n-ch, #ops-s1-ch, #ops-s2-ch, #ops-c-ch {
+		text-align: justify;
+		cursor: pointer;
+		width: 60%;
+
+	}
+
+	#ops-i-ch p, #ops-n-ch p, #ops-s1-ch p, #ops-s2-ch p, #ops-c-ch p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 30px;
+		font-size: 1.2em;
+		
+	}
+
+	#ops-i-ch i, #ops-n-ch i, #ops-s1-ch i, #ops-s2-ch i, #ops-c-ch i {
+		padding-right: 10px;
+	}
+
+	.face {
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		bottom: 0px;
+		right: 0px;
+		background: green;
+		z-index: 30;
+		font-size: 30px;
+		text-align: center;
+		color: #FFF;
+		background: #4386FA;
+
+		cursor: pointer;
 	}
 
 }
